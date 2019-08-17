@@ -16,10 +16,7 @@ setup(
         "larisin"
     ],
     install_requires=[
-        "click==6.7",
-        "colorama==0.3.9",
-        "dill==0.2.7.1",
-        "numpy==1.14.1"
+        "pandas"
     ],
     classifiers=[
         "License :: OSI Approved :: BSD License",
