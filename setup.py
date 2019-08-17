@@ -3,7 +3,7 @@ from setuptools import setup
 # Package details
 setup(
     name="larisin",
-    version="1.0.0",
+    version="0.0.2",
     entry_points={
         "console_scripts": ["larisin = larisin.cli:main"]
     },
@@ -16,16 +16,12 @@ setup(
         "larisin"
     ],
     install_requires=[
-        "pandas"
+        "pandas",
+        "dask",
+        "firebase-admin"
     ],
     classifiers=[
         "License :: OSI Approved :: BSD License",
-        "Programming Language :: Python :: 2.6",
-        "Programming Language :: Python :: 2.7",
-        "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.2",
-        "Programming Language :: Python :: 3.3",
-        "Programming Language :: Python :: 3.4",
-        "Programming Language :: Python :: 3.5"
+        "Programming Language :: Python :: 3.6"
     ]
 )
