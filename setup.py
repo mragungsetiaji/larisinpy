@@ -2,18 +2,18 @@ from setuptools import setup
 
 # Package details
 setup(
-    name="larisin",
+    name="larisinpy",
     version="0.0.2",
     entry_points={
-        "console_scripts": ["larisin = larisin.cli:main"]
+        "console_scripts": ["larisinpy = larisinpy.cli:main"]
     },
     author="Agung Setiaji",
     author_email="mragungsetiaji@gmail.com",
     url="https://github.com/mragungsetiaji/larisinpy",
-    description="Larisin CLI",
+    description="Larisinpy CLI",
     license="BSD 3-Clause License",
     packages=[
-        "larisin"
+        "larisinpy"
     ],
     install_requires=[
         "pandas",
