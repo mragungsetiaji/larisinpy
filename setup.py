@@ -11,7 +11,6 @@ setup(
     author_email="mragungsetiaji@gmail.com",
     url="https://github.com/mragungsetiaji/larisinpy",
     description="Larisin CLI",
-    long_description=open("README.rst", "r").read(),
     license="BSD 3-Clause License",
     packages=[
         "larisin"
