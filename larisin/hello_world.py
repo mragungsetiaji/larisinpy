@@ -2,4 +2,7 @@ class HelloWorld:
 
     def __init__(self):
     
-        print("Hello Larisin")
+        pass
+    
+    def run(self):
+        print("Success")
