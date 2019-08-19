@@ -1,9 +1,8 @@
-# larisinpy
+# Larisinpy [![PyPI version](https://badge.fury.io/py/larisinpy.svg)](https://badge.fury.io/py/larisinpy)
 
-`larisinpy` is python package to all in one data science and engineering tools, used by larisin engineer to perform distributed ETL, Reporting and Machine Learning.
+`larisinpy` is python package for all in one data science and engineering tools, used by larisin engineer to perform distributed ETL, Reporting and Machine Learning.
 
-## How to Install
+## Install
 
-- From repo
-    ```pip install git+https://github.com/mragungsetiaji/larisinpy```
+    pip install larisinpy
 

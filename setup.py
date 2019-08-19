@@ -3,21 +3,17 @@ from setuptools import setup
 # Package details
 setup(
     name="larisinpy",
-    version="0.0.2",
-    entry_points={
-        "console_scripts": ["larisinpy = larisinpy.cli:main"]
-    },
+    version="0.0.12",
     author="Agung Setiaji",
     author_email="mragungsetiaji@gmail.com",
     url="https://github.com/mragungsetiaji/larisinpy",
-    description="Larisinpy CLI",
+    description="Larisinpy",
     license="BSD 3-Clause License",
     packages=[
-        "larisinpy"
+        "larisinpy",
+        "larisinpy.connection"
     ],
     install_requires=[
-        "pandas",
-        "dask",
         "firebase-admin"
     ],
     classifiers=[

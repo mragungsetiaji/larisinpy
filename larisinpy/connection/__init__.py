@@ -1,3 +1,1 @@
-from .firebase import (
-    FirebaseUtils
-)
+from .firebase import FirebaseUtils

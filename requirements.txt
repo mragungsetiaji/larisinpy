@@ -1,2 +1,1 @@
-pandas
-dask
+firebase-admin

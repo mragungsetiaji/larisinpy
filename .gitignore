@@ -1,3 +1,10 @@
 test
 __pycache__
 connection/__pycache__
+
+README-deploy.md
+
+build
+dist
+larisinpy.egg-info
+
