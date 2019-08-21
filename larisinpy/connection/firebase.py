@@ -1,3 +1,4 @@
+#%%
 import firebase_admin
 import os.path
 
@@ -7,6 +8,7 @@ from firebase_admin.db import reference, Reference, _DatabaseService
 
 _DB_ATTRIBUTE = '_database'
 
+#%%
 class FirebaseUtils(object):
 
     def __init__(self, CREDENTIALS_PATH=None, DB_URL=None):
@@ -27,22 +29,17 @@ class FirebaseUtils(object):
         # Fetch the service account key JSON file contents
         cred = credentials.Certificate(self.FIREBASE_CREDENTIALS_PATH)
         
-        try:
-            # Initialize the app with a service account, 
-            # granting admin privileges
-            app = firebase_admin.initialize_app(
+        # Initialize the app with a service account, 
+        # granting admin privileges
+        app = firebase_admin.initialize_app(
                 cred, {'databaseURL': self.FIREBASE_DATABASE_URL})
 
-            print("Connected to Firebase DB : {}".format(
-                        self.FIREBASE_DATABASE_URL))
+        print("Connected to Firebase DB : {}".format(
+                self.FIREBASE_DATABASE_URL))
             
-            return app
+        return app
 
-        except:
-            return ValueError('Ups. Maybe you are already connected to :' 
-                              '{}'.format(self.FIREBASE_DATABASE_URL))
-
-    def delete_connect(self, app):
+    def disconnect(self, app):
         """Delete firebase connection
 
         Args:
@@ -68,3 +65,9 @@ class FirebaseUtils(object):
         return Reference().update(value)
 
     
+
+#%%
+CREDENTIALS_PATH = "/Users/mragungsetiaji/Documents/larisin/repo/etl-python/creds/larisin-prod.json"
+DB_URL = "https://larisin-v2.firebaseio.com/"
+
+#%%
